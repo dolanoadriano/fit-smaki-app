@@ -1,0 +1,107 @@
+.Footer {
+  background: #0c0f16;
+  width: 100%;
+  height: 350px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .Footer-area {
+    width: 1200px;
+    max-width: 100%;
+    padding: 0 5%;
+    box-sizing: border-box;
+    display: flex;
+
+    .left-side {
+      width: 50%;
+      border-right: 3px solid #13171f;
+      box-sizing: border-box;
+      padding: 0 30px;
+
+      .about-me {
+        .avatar-wrapper {
+          width: 120px;
+          height: 120px;
+          padding: 10px;
+          box-sizing: border-box;
+          float: left;
+          border: 2px solid #14171f;
+          background-color: #0b0d13;
+          overflow: hidden;
+          margin-right: 15px;
+          margin-bottom: 5px;
+          border-radius: 50%;
+          position: relative;
+
+          .avatar {
+            position: relative;
+            bottom: -14%;
+            width: 100%;
+            height: 100%;
+            background-image: url("https://www.flaticon.com/premium-icon/icons/svg/2112/2112184.svg");
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+          }
+        }
+
+        .content-wrapper {
+          text-align: left;
+          .content {
+          }
+        }
+      }
+    }
+
+    .right-side {
+      width: 50%;
+      padding: 0 30px;
+      box-sizing: border-box;
+      text-align: left;
+
+      .instagram-area {
+        width: 100%;
+        height: 54px;
+        background-color: white;
+        border-radius: 5px;
+        overflow: hidden;
+        position: relative;
+        margin-bottom: 25px;
+      }
+
+      .contacts {
+        display: flex;
+        .contact-area {
+          width: 100%;
+          height: 50px;
+          display: flex;
+
+          .icon {
+            width: 50px;
+            height: 100%;
+            background-color: white;
+            margin-right: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 5px;
+
+            & > span,
+            & > i {
+              color: #272727;
+              font-size: 30px;
+              font-weight: bold;
+            }
+          }
+
+          .content {
+            height: 100%;
+            display: flex;
+            align-items: center;
+          }
+        }
+      }
+    }
+  }
+}

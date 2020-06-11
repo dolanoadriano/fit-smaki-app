@@ -1,0 +1,57 @@
+.Articles {
+  width: 100%;
+  min-height: 758px;
+  position: relative;
+
+  .anchor#articles {
+    position: absolute;
+    top: -130px;
+  }
+
+  .articles-list {
+  }
+
+  .articles-pages {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+
+    .page-button {
+      width: 32px;
+      height: 32px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #333;
+      margin-right: 8px;
+      border-radius: 3px;
+      transition: 0.3s ease-out;
+      border: none;
+
+      &:hover {
+        cursor: pointer;
+        background: #2b596f;
+
+        & > span {
+          color: #dedede;
+        }
+      }
+
+      &.active {
+        background: #238ec1;
+
+        & > span {
+          color: white;
+        }
+      }
+
+      & > span {
+        transition: 0.3s ease-out;
+        font-size: 12px;
+        font-weight: bold;
+        color: #bbb;
+      }
+    }
+  }
+}

@@ -1,0 +1,11 @@
+.Article {
+  text-align: left;
+  min-height: 700px;
+  display: block;
+  position: relative;
+
+  .anchor#content {
+    position: absolute;
+    top: -130px;
+  }
+}

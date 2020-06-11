@@ -1,0 +1,140 @@
+.Top {
+  width: 100%;
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  background-color: #070707;
+  overflow: hidden;
+  position: relative;
+
+  .stickers {
+    position: absolute;
+    transform: translateX(120px);
+  }
+
+  .background {
+    width: 100%;
+    height: 100%;
+    background-image: url("../../../assets/top-background.png");
+    background-size: auto 100%;
+    animation: animate-top-background 14.5s infinite;
+    animation-timing-function: linear;
+    position: absolute;
+    z-index: 1;
+    opacity: 0.4;
+
+    @keyframes animate-top-background {
+      0% {
+        background-position: 0 0;
+        opacity: 0.4;
+      }
+      25% {
+        opacity: 0.5;
+      }
+      30% {
+        background-position: 25px -10px;
+      }
+      50% {
+        opacity: 0.3;
+        background-position: 35px 25px;
+      }
+      75% {
+        opacity: 0.5;
+        background-position: 15px -20px;
+      }
+    }
+  }
+
+  .person-wrapper {
+    position: absolute;
+    z-index: 10;
+    width: 1200px;
+    max-width: 100%;
+    height: 100%;
+    padding: 0 5%;
+    box-sizing: border-box;
+
+    .person {
+      z-index: 200;
+      width: 100%;
+      height: 100%;
+      background-image: url("../../../assets/person.png");
+      background-size: auto 90%;
+      background-position: bottom right;
+      background-repeat: no-repeat;
+    }
+  }
+
+  .Top-area {
+    position: relative;
+    z-index: 100;
+    width: 1200px;
+    max-width: 100%;
+    height: 100%;
+    padding: 0 5%;
+    box-sizing: border-box;
+
+    display: flex;
+    align-items: center;
+
+    .about-wrapper {
+      width: 100%;
+      text-align: left;
+      color: #ddd;
+
+      .about {
+        width: 70%;
+
+        h2 {
+          font-size: 70px;
+          line-height: 70px;
+          letter-spacing: 0;
+          font-family: "Oswald";
+          margin: 0;
+          padding: 0;
+
+          & > span:nth-child(2) {
+            display: block;
+            color: #238ec1;
+          }
+        }
+
+        .details-wrapper {
+          width: 70%;
+
+          .details {
+            color: #aaa;
+            line-height: 25px;
+            font-family: "Nunito Sans", sans-serif;
+          }
+        }
+
+        .button-wrapper {
+          .read-more-button {
+            background-color: #238ec1;
+            background-image: linear-gradient(0deg, #1c465a, #0084c3);
+            border: none;
+            width: 200px;
+            height: 45px;
+            border-radius: 3px;
+            color: #ddd;
+            text-transform: uppercase;
+            font-family: "Nunito Sans", sans-serif;
+            font-weight: bold;
+            text-shadow: 0 0 2px black;
+            font-size: 14px;
+            transition: 0.2s ease-out;
+
+            &:hover {
+              transform: scale(0.98);
+              background: #238ec1;
+              cursor: pointer;
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,26 @@
+[
+  {
+    "name": "o stronie",
+    "path": "#top",
+    "pathType": "internal",
+    "className": null
+  },
+  {
+    "name": "artykuły",
+    "path": "/#articles",
+    "pathType": "internal",
+    "className": null
+  },
+  {
+    "name": "instragram",
+    "path": "https://www.instagram.com/fit_smaki/",
+    "pathType": "external",
+    "className": "instagram"
+  },
+  {
+    "name": "kontakt",
+    "path": "#contact",
+    "pathType": "internal",
+    "className": null
+  }
+]

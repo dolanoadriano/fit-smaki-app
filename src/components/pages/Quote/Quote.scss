@@ -1,0 +1,23 @@
+.Quote {
+  .quote-area {
+    .quote-content {
+      font-style: italic;
+      text-align: left;
+      font-size: 13px;
+      color: #888;
+      line-height: 21px;
+
+      & > .icon-quote-left {
+      }
+    }
+
+    .quote-author {
+      text-align: right;
+
+      & > span {
+        color: #ccc;
+        font-size: 13px;
+      }
+    }
+  }
+}

@@ -1,0 +1,78 @@
+.ArticleMini {
+  display: block;
+  border-bottom: 2px solid #1d222b;
+  margin-bottom: 10px;
+
+  &:hover {
+    opacity: 1;
+    cursor: pointer;
+
+    .timeline {
+      .pointer {
+        transform: scale(1.25);
+      }
+    }
+
+    .cover {
+      border-color: #32a9e2;
+
+      .shadow {
+        box-shadow: inset 0 0 15px 5px black;
+      }
+
+      .image {
+        box-shadow: inset 0 0 15px 5px black;
+        transform: rotate(-8deg) scale(1.1);
+      }
+    }
+
+    .title {
+      h3 {
+        color: #32a9e2;
+      }
+    }
+  }
+
+  .cover {
+    transition: border-color 0.4s ease-out;
+    width: 100%;
+    height: 140px;
+    border: 2px solid #888;
+    background-color: #090a0e;
+    box-sizing: border-box;
+    flex-shrink: 1;
+    border-radius: 2px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+
+    .shadow {
+      transition: 0.4s ease-out;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 50;
+    }
+
+    .image {
+      transition: box-shadow, transform 0.4s ease-out;
+      position: absolute;
+      z-index: 20;
+      width: 120%;
+      height: 120%;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+  }
+
+  .title {
+    transition: 0.4s ease-out;
+    text-align: left;
+  }
+}

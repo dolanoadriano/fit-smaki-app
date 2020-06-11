@@ -1,0 +1,49 @@
+.Sticker {
+  position: absolute;
+  width: 30px;
+  height: 360px;
+
+  .item {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform: skewX(-32deg);
+    background: #238ec1;
+    opacity: 1;
+    animation-duration: 4.3s;
+    animation-iteration-count: infinite;
+
+    @keyframes animate-sticker-1 {
+      0% {
+        opacity: 1;
+        transform: skewX(-32deg) translateY(0px);
+      }
+      40% {
+        opacity: 0.8;
+        transform: skewX(-32deg) translateY(130px);
+      }
+    }
+
+    @keyframes animate-sticker-2 {
+      0% {
+        opacity: 1;
+        transform: skewX(-32deg) translateY(0px);
+      }
+      60% {
+        opacity: 0.8;
+        transform: skewX(-32deg) translateY(130px);
+      }
+    }
+
+    @keyframes animate-sticker-3 {
+      0% {
+        opacity: 1;
+        transform: skewX(-32deg) translateY(0px);
+      }
+      55% {
+        opacity: 0.8;
+        transform: skewX(-32deg) translateY(100px);
+      }
+    }
+  }
+}
