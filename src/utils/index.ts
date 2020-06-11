@@ -1,6 +1,6 @@
 import React from "react";
 
-export const apiUrl: string = "http://localhost:1337";
+export const apiUrl: string = "https://fit-smaki-api.herokuapp.com";
 export const localstoargeVersion: string = "v1";
 
 export const getImageUrl = (image: Image): string =>
