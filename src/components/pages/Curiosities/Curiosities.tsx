@@ -44,7 +44,8 @@ class CuriositiesComponent extends React.Component<
   };
 
   public randomCurrentCuriositiesIndex = (): number => {
-    if (!this.state.activeCuriosities) return -1;
+    if (!this.state.activeCuriosities || !this.state.activeCuriosities.images)
+      return -1;
     const oldIndex: number = this.state.currentCuriositiesIndex;
     const newIndex: number = randomInteger(
       0,
@@ -96,6 +97,7 @@ class CuriositiesComponent extends React.Component<
             style={{
               backgroundImage: `url(${
                 activeCuriosities &&
+                currentCuriositiesIndex !== -1 &&
                 getImageUrl(activeCuriosities.images[currentCuriositiesIndex])
               })`,
             }}
